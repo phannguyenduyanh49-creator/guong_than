@@ -3,7 +3,7 @@ function askMirror() {
   const answerBox = document.getElementById("answer");
 
   if (input.includes("gương thần ơi") && input.includes("ai xinh nhất")) {
-    answerBox.innerText = "✨ Bạn chính là người xinh nhất! ✨";
+    answerBox.innerText = "✨Mỹ Tiên là xinh nhất ✨";
   } else {
     answerBox.innerText = "🤔 Gương chưa hiểu câu hỏi...";
   }
@@ -25,8 +25,8 @@ function createFlowers() {
     flower.innerText = "🌸";
 
     flower.style.left = Math.random() * 100 + "vw";
-    flower.style.animationDuration = (2 + Math.random() * 3) + "s";
-    flower.style.fontSize = (16 + Math.random() * 20) + "px";
+    flower.style.animationDuration = 2 + Math.random() * 3 + "s";
+    flower.style.fontSize = 16 + Math.random() * 20 + "px";
 
     container.appendChild(flower);
 
