@@ -3,7 +3,7 @@ function askMirror() {
   const answerBox = document.getElementById("answer");
 
   if (input.includes("gương thần ơi") && input.includes("ai xinh nhất")) {
-    answerBox.innerText = "✨Mỹ Tiên là xinh nhất ✨";
+    answerBox.innerText = "✨Bạn là xinh nhất thế giớiiiiiiiiii ✨";
   } else {
     answerBox.innerText = "🤔 Gương chưa hiểu câu hỏi...";
   }
