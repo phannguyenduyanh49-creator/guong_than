@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gương Thần</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <div class="mirror">
     <h2>🪞 Gương Thần</h2>
-    <input type="text" id="question" placeholder="Gõ: gương thần ơi, ai xinh nhất...">
-    <br>
+
+    <!-- nhập tên -->
+    <input
+      type="text"
+      id="name"
+      placeholder="Nhập tên người đẹp..."
+    />
+
+    <!-- nhập câu hỏi -->
+    <input
+      type="text"
+      id="question"
+      placeholder="Gõ: gương thần ơi ai xinh nhất..."
+    />
+
     <button onclick="askMirror()">Hỏi ngay 💖</button>
+
     <div class="answer" id="answer"></div>
   </div>
 
-  <!-- container hoa rơi -->
+  <!-- hoa rơi -->
   <div class="flowers" id="flowers"></div>
 
   <script src="script.js"></script>

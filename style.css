@@ -1,61 +1,94 @@
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #ff9ecf, #ffc1e3);
-  color: #fff;
+  color: white;
   text-align: center;
-  padding-top: 100px;
   overflow: hidden;
+}
+
+/* căn giữa */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 /* khung gương */
 .mirror {
-  width: 360px;
-  margin: auto;
-  padding: 25px;
+  width: 380px;
+  padding: 30px;
   border-radius: 25px;
   background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+
   box-shadow: 0 0 30px rgba(255, 105, 180, 0.6);
-  backdrop-filter: blur(10px);
+
   animation: glow 2s infinite alternate;
 }
 
 @keyframes glow {
-  from { box-shadow: 0 0 15px #ff69b4; }
-  to { box-shadow: 0 0 40px #ff1493; }
+  from {
+    box-shadow: 0 0 15px #ff69b4;
+  }
+
+  to {
+    box-shadow: 0 0 40px #ff1493;
+  }
 }
 
+h2 {
+  margin-bottom: 20px;
+}
+
+/* input */
 input {
-  width: 80%;
+  width: 85%;
   padding: 12px;
-  border-radius: 12px;
+  margin: 10px 0;
+
   border: none;
   outline: none;
-  margin-bottom: 10px;
+
+  border-radius: 12px;
+
+  font-size: 15px;
 }
 
+/* nút */
 button {
-  padding: 10px 20px;
-  border-radius: 12px;
+  margin-top: 10px;
+
+  padding: 12px 22px;
+
   border: none;
+  border-radius: 12px;
+
   background: #ff4da6;
   color: white;
+
+  font-size: 16px;
   cursor: pointer;
+
   transition: 0.3s;
 }
 
 button:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
   background: #ff1a8c;
 }
 
 /* câu trả lời */
 .answer {
-  margin-top: 20px;
-  font-size: 20px;
+  margin-top: 25px;
+
+  font-size: 22px;
   font-weight: bold;
-  color: #fff;
+
   opacity: 0;
   transform: translateY(20px);
+
   transition: all 0.5s ease;
 }
 
@@ -69,20 +102,23 @@ button:hover {
   position: fixed;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
+
   pointer-events: none;
 }
 
 .flower {
   position: absolute;
-  font-size: 20px;
+  top: -20px;
+
   animation: fall linear forwards;
 }
 
 @keyframes fall {
   to {
-    transform: translateY(100vh) rotate(360deg);
+    transform: translateY(110vh) rotate(360deg);
     opacity: 0;
   }
 }
